@@ -122,6 +122,11 @@ var base = function ( args ) {
 		}
 	
 	});
+
+	extend(base, {
+    	addStaticProperties: base.addStaticMethods,
+		addInstanceProperties: base.addInstanceMethods
+	});
 	
 	base.addInstanceMethods({
 	
